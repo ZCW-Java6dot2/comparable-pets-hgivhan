@@ -6,11 +6,14 @@ public class PetComparator implements Comparator<Pet> {
 
     @Override
     public int compare(Pet pet1, Pet pet2) {
-        int nameCompare = pet1.getName().compareTo(pet2.getName());
-        if (nameCompare == 0) {
+        int answer = pet1.getAge().compareTo(pet2.getAge());
+        if (answer == 0){
+            return pet1.getName().compareTo(pet2.getName());
         }
-
-    }
+        else {
+            return answer;
+        }
+        }
 }
 
 //    @Override

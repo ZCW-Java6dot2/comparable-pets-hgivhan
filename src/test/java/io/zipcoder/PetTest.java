@@ -15,4 +15,16 @@ public class PetTest {
 
 
     }
+
+    @Test
+    public void getAge() {
+    }
+
+    @Test
+    public void setAge() {
+    }
+
+    @Test
+    public void compareTo() {
+    }
 }
